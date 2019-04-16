@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Dokdo|Kalam:400,700');
+.bg-cats{
+    background: url("http://hq-oboi.ru/photo/mnogo_koshek_1600x1200.jpg") no-repeat;
+    background-size: cover;
+}
+h1{
+    font-size: 6rem;
+    background: url("http://hq-oboi.ru/photo/mnogo_koshek_1600x1200.jpg") repeat-x;
+    background-size: contain;
+    font-family: 'Kalam', cursive;
+    font-weight: bold;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+h2{
+    font-family: 'Dokdo', cursive;
+    font-size: 3em;
+    text-align: center;
+}
