@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ЗАДАНИЕ 3</title>
+    <style>
+        .border{
+            border: #7FFFD4 solid 2px;
+        }
+        .box-shadow{
+            box-shadow: #000000 0 0 3px;
+        }
+        #outline{
+            outline: 2px solid black;
+        }
+        #after{
+            background: #f50a17;
+            position: relative;
+            width: 204px;
+            height: 54px;
+            text-align: center;
+            color: #ffffff;
+        }
+        #after::before{
+            position: absolute;
+            left: 4px;
+            top: 4px;
+            content: "";
+            background: rgba(7, 4, 48, 0.36);
+            padding: 2px;
+            box-sizing: border-box;
+            width: 196px;
+            height: 46px;
+        }
+        .img{
+            background: url("https://avatanplus.com/files/resources/mid/57947556d2e021561bea5b50.png");
+            background-size: 100% 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Способ 1</h1>
+<div class="border">content</div>
+
+<h1>Способ 2</h1>
+<div class="box-shadow">content</div>
+
+<h1>Способ 3</h1>
+<div id="outline">content</div>
+
+<h1>Способ 4</h1>
+<div id="after">content</div>
+
+<h1>Способ 5</h1>
+<div class="img">content</div>
+
+</body>
+</html>
