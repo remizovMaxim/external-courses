@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ЗАДАНИЕ 3</title>
+    <style>
+         .one{
+  margin: 40px;
+  background: #60b88d;
+  width: 400px;
+  height: 200px;
+  box-shadow: 5px 5px #90cdaf, 10px 10px #bfe3d1
+}
+
+.container{
+  position: relative;
+  margin: 40px 0 0 80px;
+}
+
+.first, 
+.twice, 
+.thrid{
+  position: absolute;
+  width: 400px;
+  height: 200px;
+}
+
+.first{
+  background: #60b88d;
+  z-index: 3;
+  left: 0;
+  top: 0;
+} 
+.twice{
+  background: #90cdaf;
+  z-index: 2;
+  left: 5px;
+  top:5px;
+} 
+.thrid{
+  background: #bfe3d1;
+  z-index: 1;
+  left: 10px;
+  top: 10px;
+}
+
+article{
+  width: 400px; 
+  height: 200px;
+  background: #60b88d;
+}
+article::before, article::after{
+  content: "";
+  width: 400px;
+  height: 200px;
+  position: absolute;
+}
+article::before{
+  background: #90cdaf;
+  top: 13px;
+  left: 13px;
+  z-index: -1;
+}
+article::after{
+  background: #bfe3d1;
+  top: 18px;
+  left: 18px;
+  z-index: -2;
+}
+    </style>
+</head>	
+<body style="background: #155115">
+  
+  <article><h2 style="margin: 0;">Способ №1</h2></article>
+  
+  <div class="one">Способ №2</div>
+  
+  <div class="container">
+    <div class="first">Способ №3</div>
+    <div class="twice"></div>
+    <div class="thrid"></div>
+  </div>
+   
+</body>
+</html>
