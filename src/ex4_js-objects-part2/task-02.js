@@ -4,9 +4,7 @@ Remizov Maxim, 2019
 
 Написать функцию, которая создает пустой объект, но без прототипа.
 */
-
 var createObj = function (){
-var newObj = Object.create(null);
-return newObj;
+return Object.create(null);
 }
 module.exports = createObj;
