@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>ex11 num 3 Remizov</title>
+  <style>
+    body{
+  background:
+        radial-gradient(
+            khaki 40px,
+            transparent 0,
+            transparent 100%
+        ),
+        radial-gradient(
+            skyblue 40px,
+            transparent 0,
+            transparent 100%
+        ),
+        radial-gradient(
+            pink 40px,
+            transparent 0,
+            transparent 100%
+        ), snow;
+    background-blend-mode: multiply;
+    background-size: 100px 100px;
+    background-position: 0 0, 33px 33px, -33px -33px;
+}
+section{
+  width: 300px;
+  margin: 30px auto;
+}
+.field { 
+  position:relative; 
+  font-family: Arial; 
+  text-transform:uppercase; 
+  font-weight:bold; 
+  display:inline-block; 
+}
+label { 
+  position:absolute; 
+  left:0; 
+  top:0; 
+  transition: all .2s linear; 
+  color:#999; 
+  font-size:10px; 
+}
+input { 
+  margin-top:15px; 
+  border: 1px solid #656565;
+  box-shadow: 0 0px 10px 1px #656565;
+  padding: 3px; 
+}
+input:invalid + label { 
+  top:10px; 
+  opacity:0; 
+}
+input:valid + label { 
+  opacity:1; 
+  top:0; 
+}
+input:focus { 
+  outline:none; 
+}
+input:focus + label { 
+  color:#33A; 
+}
+
+  </style>
+</head>
+<body>  
+	<section>
+    <form>
+      <div class="field">
+        <input type="text" placeholder="MY STRING" required>
+        <label>my string</label>
+      </div>
+    </form>
+  </section>
+</body>
+</html>
