@@ -7,9 +7,9 @@ function mySlice(array, begin, end){
 	  endLint = end,
 	  beginLint = begin;
   array.forEach(function(item, i){   
-    if(endLint === undefined) endLint = array.length;     
+    if(!endLint) endLint = array.length;     
     if(endLint < 0) endLint = array.length + endLint;
-    if(beginLint === undefined) beginLint = 0;
+    if(!beginLint) beginLint = 0;
     if(beginLint < 0) beginLint = array.length + beginLint;                        
     if(i >= beginLint && i < endLint) newArray.push(item);          
   });
