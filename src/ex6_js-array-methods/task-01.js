@@ -2,7 +2,7 @@
 EPAM PracticWork #6 task-01
 Remizov Maxim, 2019
 */
-function mySlice(array, begin, end){
+function toSlice(array, begin, end){
   var newArray = [],
 	  endLint = end,
 	  beginLint = begin;
@@ -15,4 +15,4 @@ function mySlice(array, begin, end){
   });
   return newArray;
 }
-module.exports = mySlice;
+module.exports = toSlice;
