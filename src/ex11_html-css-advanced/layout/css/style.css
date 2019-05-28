@@ -14,7 +14,7 @@ body{
     padding: 0;
     margin: 0;
 }
-header{
+.header{
     position: relative;
     display: flex;
     flex-direction: row;
@@ -25,13 +25,13 @@ header{
     width: 100%;
     height: 45px;
 }
-header .header__menu a{
+.header__menu a{
     text-decoration: none;
     color: #78829d;
     font-size: 13px;
     margin: 0 9px;
 }
-header .header__block{
+.header__block{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -42,17 +42,17 @@ header .header__block{
     height: 100%;
     padding: 0 12px;
 }
-header .header__block p{
+.header__block p{
     margin: 0;
 }
-aside{
+.panel{
     position: fixed;
     left: 0;
     width: 200px;
     height: 100vh;
     background-color: #181e2c;
 }
-aside .aside__add, .aside__menu, .aside__filters, .aside__history{
+.aside__add, .aside__menu, .aside__filters, .aside__history{
     background-color: #1f2637;
     margin-bottom: 4px;
     border-top: 0.5px solid #393c51;
@@ -60,10 +60,10 @@ aside .aside__add, .aside__menu, .aside__filters, .aside__history{
     color: #78829d;
     font-size: 13px;
 }
-aside .aside__add{
+.aside__add{
     display: block;
 }
-aside .aside__add .aside__add-button{
+.aside__add .aside__add-button{
     background-color: #f2795a;
     border-radius: 4px;
     color: #ffffff;
@@ -72,58 +72,66 @@ aside .aside__add .aside__add-button{
     text-transform: uppercase;
     padding: 14px 18px;
     margin: 35px 20px;
+    border: none;
 }
-aside .aside__add .aside__add-button:hover{
+.aside__add .aside__add-button:hover{
     cursor: pointer;
     background-color: #ee675d;
 }
-aside .aside__menu ul, .aside__filters ul{
+.aside__menu ul, .aside__filters ul{
     list-style: none;
     padding: 0;
     margin: 0;
     font-size: 13px;
 }
-aside .aside__menu ul li i{
+.aside__menu a{
+    color: #78829d;
+    text-decoration: none;
+}
+.aside__menu li:hover a{
+    color: #ffffff;
+}
+.aside__menu ul li i{
     margin-right: 12px;
 }
-aside .aside__filters ul li:before{
+.aside__filters ul li:before{
     content: '\2022';
     margin-right: 12px;
 }
-aside .aside__filters ul li:nth-child(1):before{
+.aside__filters ul li:nth-child(1):before{
     color: #e64c66;
     font-size: 18px;
 }
-aside .aside__filters ul li:nth-child(2):before{
+.aside__filters ul li:nth-child(2):before{
     color: #ffab00;
     font-size: 18px;
 }
-aside .aside__filters ul li:nth-child(3):before{
+.aside__filters ul li:nth-child(3):before{
     color: #00bfdd;
     font-size: 18px;
 }
-aside .aside__filters ul li:nth-child(4):before{
+.aside__filters ul li:nth-child(4):before{
     color: #7874cf;
     font-size: 18px;
 }
-aside .aside__menu ul li, .aside__filters ul li{
+.aside__menu ul li, .aside__filters ul li{
     padding: 13px 21px;
 }
-aside .aside__menu ul li:hover, .aside__filters ul li:hover{
+.aside__menu ul li:hover, .aside__filters ul li:hover{
     background-color: #15a4fa;
     color: #ffffff;
     cursor: pointer;
 }
-aside .aside__history{
+.aside__history{
     padding: 30px 21px;
     font-size: 12px;
 }
-aside .aside__history .aside__history-record i{
+.aside__history .aside__history-record i{
     float: left;
 }
-aside .aside__history .aside__history-record p{
+.aside__history .aside__history-record p{
     margin-left: 20px;
 }
-aside .aside__history .aside__history-record #time{
+.aside__history .aside__history-record #time{
     font-weight: 300;
 }

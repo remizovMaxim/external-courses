@@ -1,0 +1,88 @@
+body{
+    padding: 15px;
+}
+.container{
+    position: relative;
+    display: block;
+    height: 400px;
+}
+/*номер 1*/
+.load{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid black;
+    animation-name: loading;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes loading {
+    0% {background: #5d2882;transform: scale(1);}
+    25% {background: #742a9b;transform: scale(0.8);}
+    50% {background: #8b2cb4;transform: scale(0.6);}
+    75% {background: #9a35cd;transform: scale(0.4);}
+    100% {background: #a944e6;transform: scale(0.2);}
+}
+/*номер 2*/
+.wall{
+    width: 30px;
+    height: 300px;
+    background: #656565;
+    position: absolute;
+    left: 0;
+}
+.wall:last-of-type{
+    left: 200px;
+}
+.ball{
+    position: absolute;
+    background: red;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    top: 150px;
+    left: 30px;
+    margin-top: -25px;
+    animation-name: myAnimate;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-name: myAnimate;
+    -webkit-animation-duration: 2s;
+}
+
+@keyframes myAnimate{
+    0%{left: 30px; top: 150px;}
+    25%{left: 150px; top: 190px;}
+    50%{left: 30px; top: 150px;}
+    75%{left: 150px; top: 110px;}
+    100%{left: 30px; top: 150px;}
+}
+@-webkit-keyframes myAnimate{
+    0%{left: 30px; top: 150px;}
+    25%{left: 150px; top: 190px;}
+    50%{left: 30px; top: 150px;}
+    75%{left: 150px; top: 110px;}
+    100%{left: 30px; top: 150px;}
+}
+/*номер 3*/
+.block{
+    width: 150px;
+    height: 150px;
+    background-image: linear-gradient(-6deg, #5d2882 0%, #e61a73 100%);
+    animation-name: blocking;
+    animation-duration: 14s;
+    animation-iteration-count: infinite;
+}
+@keyframes blocking {
+    0%{border-radius: 150px;}
+    13%{border-radius: 0px;}
+    26%{background-image: linear-gradient(-6deg, #821f1a 0%, #53e65f 100%);}
+    40%{width: 100px; height: 100px; transform: skewX(20deg);}
+    55%{transform: rotate(90deg); transform: skewX(0deg);}
+    70%{background-image: linear-gradient(-6deg, rgba(54, 203, 61, 0.87) 0%, #e6bc31 100%);}
+    100%{border-radius: 150px;}
+}
