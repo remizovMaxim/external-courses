@@ -1,8 +1,8 @@
-@media all and (max-width: 1024px) {
-     header{
+@media all and (max-width: 1200px) {
+     .header{
          display: none;
      }
-    menu{
+    .menu-block{
         display: none;
     }
     .header-mobile{
@@ -10,6 +10,7 @@
         flex-flow: row nowrap;
         justify-content: space-between;
         align-items: center;
+        height: 101px;
     }
     .header-mobile .burger{
         display: block;
@@ -22,42 +23,73 @@
         height: 8px;
         margin: 4px 0;
     }
+    .header-mobile .logo a img{
+        height: 71px;
+    }
     .header-mobile .search{
         margin-right: 10px;
     }
-    main{
+    .header-mobile .search{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .header-mobile .search .search-img{
+        margin-right: 13px;
+    }
+    .header-mobile .search input{
+        border: none;
+    }
+    .header-mobile .menu__container{
+        display: none;
+    }
+    .header-mobile .active-menu{
+        display: block;
+        position: absolute;
+        top: 101px;
+        left: 0;
+        width: 100%;
+        background: #ffffff;
+        margin: 0;
+        padding: 20px;
+        list-style: none;
+    }
+    .header-mobile .active-menu .menu__container-item{
+        margin: 20px 0;
+    }
+    .main{
         height: 600px;
         background-size: 100% 100%;
     }
-    main .container .text-block img{
+    .main .container .text-block img{
         display: none;
     }
-    main .container .text-block h1{
+    .main .container .text-block h1{
         font-size: 48px;
     }
-    main .container .text-block #h1-child{
+    .main .container .text-block #h1-child{
         font-size: 35px;
         margin-left: 30px;
     }
-    main .container .slider{
+    .main .container .slider{
         display: none;
     }
-    section .container{
+    .section .container{
         max-width: 800px;
         width: 100%;
         margin: 0 auto;
     }
-    section .container .article-block{
+    .section .container .article-block{
         margin-top: 11px;
         margin-bottom: 181px;
         display: flex;
         flex-flow: column nowrap;
         justify-content: space-around;
     }
-    section .container .article-block .article{
+    .section .container .article-block .article{
         width: 100%;
     }
-    section .container .article-block .article p{
+    .section .container .article-block .article p{
         width: unset;
     }
 }
@@ -65,10 +97,10 @@
     .header-mobile .search input{
         width: 149px;
     }
-    main .container .text-block{
+    .main .container .text-block{
         padding: 227px 0 0 120px;
     }
-    section .container{
+    .section .container{
         max-width: 600px;
     }
 }

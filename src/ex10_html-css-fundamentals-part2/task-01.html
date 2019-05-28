@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+ <head> 
+ <meta charset="utf-8">
+ <title> my practice </title>
+ </head>
+ <body>
+ <form action='http://httpbin.org/get' metod='get'>
+  <fieldset name='personal_data'>
+   <legend> Personal data</legend>
+     <label for='surname'>Surname</label>
+     <input type='text' name='surname'>
+     <p><label for='first_name'>First name</label>
+     <input type='text' name='first_name'></p> 
+     <p><label for='middle_name'>Middle name</label>
+     <input type='text' name='middle_name'></p> 
+     <p><label for='you'>You are</label>
+     <input type='radio' name='you' value='male'>male
+     <input type='radio' name='you' value='female'>female</p> 
+     <p><label for='age'>Age</label>
+     <input type='number' min='18' max='101' step='1' name='age'></p> 
+     <p><label for='country'>Country of Residence</label>
+     <select name='country'>
+      <option value='Russia'> Russia</option>
+      <option value='Great Britain'>Great Britain</option>
+     </select></p> 
+     <p><label for='city'>City</label>
+     <input type='checkbox' name='city' value='Ryazan'>Ryazan
+     <input type='checkbox' name='city' value='Moscow'>Moscow</p>
+     <p><label for='photo'>Photography</label>
+     <input type='file' name='photo'></p><hr>
+     <p><label for='title'>Title</label> 
+     <select name='title' multiple>
+      <optgroup label='Techologies'>
+       <option>Web Master</option>
+       <option>Database Administrator</option>
+       <option>Computer-aided design</option>
+      </optgroup>
+      <optgroup label='Finance'>
+       <option> Economic Planning</option>
+       <option>Management accounting</option>
+       <option>Budgeting and planning</option>
+      </optgroup>
+     </select></p>
+     <p><label for='salary'>Salary</label>
+     <input type='range' name='salary'></p>
+     <textarea name='comment' placeholder='Tell us about yourself...' cols='50' rows='10'></textarea>
+  </fieldset>
+  <fieldset id='contact_information'>
+   <legend> Contact information</legend>
+   <p><label for='site'>Site</label>
+   <input type='url' name='site'></p>
+   <p><label for='email'>Email</label>
+   <input type='email' name='email'></p>
+   <p><label for='phone'>Phone</label>
+   <input type='phone' name='phone'></p>
+  </fieldset>
+
+  <label for='password'>Password</label>
+  <input type='password' id='password' required style='margin-top:10px'>
+  <div style='margin-top:10px'>
+   <input type='submit'>
+   <input type='reset'>
+  </div>
+ </form>
+ </body>
+</html>

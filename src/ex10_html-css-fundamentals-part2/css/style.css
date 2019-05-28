@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
-body{
+.body{
     padding: 0;
     margin: 0;
     font-family: "Open Sans";
     background: #FFFFFF;
 }
-header{
+.header{
     height: 217px;
     display: flex;
     flex-flow: row nowrap;
@@ -15,42 +15,51 @@ header{
     width: 100%;
     margin: 0 auto;
     padding: 0;
+    border-bottom: 1px solid #eceef4;
 }
-header .social{
+.header .social{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     width: 200px;
 }
-header .social #phone, #map, #message:hover{
+.header .social #phone, #map, #message:hover{
     cursor: pointer;
 }
-header .social #map{
+.header .social #map{
     position: relative;
+    padding: 0 22px;
+    border-left: 1px solid #bcbec3;
+    border-right: 1px solid #bcbec3;
 }
-header .social #map:hover:before{
+.header .social #map:hover:before{
     content: "Saudi Arabia . Alreyadah";
-    text-align: center;
     background: #ffffff;
     position: absolute;
-    top: -57px;
-    left: -100px;
+    top: -62px;
+    left: -80px;
     border: 2px solid #d4d4d5;
     width: 227px;
     height: 41px;
     border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-header .social #map:hover:after{
+.header .social #map:hover:after{
     content: "";
-    border-top: 10px solid #d4d4d5;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
+    border-top: 2px solid #d4d4d5;
+    border-left: 2px solid #d4d4d5;
+    background: #ffffff;
+    transform: rotate(-151grad);
+    width: 15px;
+    height: 15px;
     position: absolute;
-    top: -13px;
-    left: 0px;
+    top: -26px;
+    left: 25px;
 }
-menu{
+.menu-block{
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -61,38 +70,46 @@ menu{
     margin: 0 auto;
     padding: 0;
 }
-menu .menu ul{
+.menu-block .menu .menu__container{
     list-style: none;
     display: flex;
     padding: 0;
     margin: 0;
 }
-menu .menu ul li{
+.menu-block .menu .menu__container .menu__container-item{
     margin: 0 26px;
 }
-menu .menu ul li.active a{
+.menu-block .menu .menu__container .menu__container-item.active a{
     color: #1faae2;
     position: relative;
 }
-menu .menu ul li.active a:after{
+.menu-block .menu .menu__container .menu__container-item.active a:after{
     content: "";
     position: absolute;
-    top:10px;
+    top:25px;
     left: 50%;
-    margin-left: -20px;
-    border: 20px solid transparent;	border-bottom: 20px solid #1faae2;
+    margin-left: -17px;
+    border: 17px solid transparent;
+    border-bottom: 10px solid #1faae2;
 }
-menu .menu ul li a{
+.menu-block .menu .menu__container .menu__container-item a{
     font-family: "Open Sans";
     text-decoration: none;
     color: #6d6e71;
     font-size: 13px;
     font-weight: 700;
 }
-menu .menu ul li a:hover{
+.menu-block .menu .menu__container .menu__container-item a:hover{
     color: #1faae2;
 }
-menu .search input{
+.menu-block .search{
+    display: flex;
+    align-items: flex-end;
+}
+.menu-block .search .search-img{
+    margin-right: 13px;
+}
+.menu-block .search input{
     border: none;
     height: 16px;
     color: #6d6e71;
@@ -100,28 +117,28 @@ menu .search input{
 .header-mobile{
     display: none;
 }
-main{
+.main{
     background: url("../img/iback.png") no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     height: 885px;
 }
-main .container{
+.main .container{
     max-width: 1169px;
     width: 100%;
     margin: 0 auto;
 }
-main .container .text-block{
+.main .container .text-block{
     display: inline-block;
     position: relative;
     padding: 265px 0 0 185px;
 }
-main .container .text-block img{
+.main .container .text-block img{
     position: relative;
     top: 126px;
     left: 7px;
     z-index: 1;
 }
-main .container .text-block h1{
+.main .container .text-block h1{
     font-family: "Open Sans";
     font-size: 58px;
     color: #ffffff;
@@ -130,7 +147,7 @@ main .container .text-block h1{
     position: relative;
     z-index: 2;
 }
-main .container .text-block #h1-child{
+.main .container .text-block #h1-child{
     font-family: "Open Sans";
     text-shadow: 1px 1px 2px rgba(1, 1, 1, 0.15);
     color: #ffffff;
@@ -138,23 +155,22 @@ main .container .text-block #h1-child{
     font-weight: 300;
     margin: 0 0 0 107px;
 }
-main .container .slider{
+.main .container .slider{
     margin-top: 146px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-end;
 }
-main .container .slider .slider-img {
-    margin-left: 5px;
+.main .container .slider .slider-img {
     position: relative;
     width: 322px;
     height: 241px;
 }
-main .container .slider .slider-img img{
+.main .container .slider .slider-img img{
     width: 100%;
     height: 100%;
 }
-main .container .slider .slider-img span{
+.main .container .slider .slider-img span{
     opacity: 0;
     font-size: 14px;
     color: #ffffff;
@@ -162,11 +178,11 @@ main .container .slider .slider-img span{
     text-align: center;
     padding-top: 15px;
 }
-main .container .slider .slider-img span img{
+.main .container .slider .slider-img span img{
     width: 32px;
     height: 29px;
 }
-main .container .slider .slider-img:hover span{
+.main .container .slider .slider-img:hover span{
     opacity: 1;
     cursor: pointer;
     position: absolute;
@@ -176,31 +192,33 @@ main .container .slider .slider-img:hover span{
     height: 50px;
     background: #8aca51;
 }
-main .container .slider .slider-img #orange{
+.main .container .slider .slider-img #orange{
     background-color: #feeb75;
 }
-main .container .slider img#rows{
-    margin-left: 5px;
-}
-main .container .slider img#rows:hover {
+.main .container .slider img#rows:hover {
     cursor: pointer;
     box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.51);
 }
-section .container .article-block{
+.section .container{
+    max-width: 1169px;
+    width: 100%;
+    margin: 0 auto;
+}
+.section .container .article-block{
     margin-top: 151px;
     margin-bottom: 181px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
 }
-section .container .article-block .article{
+.section .container .article-block .article{
     width: 522px;
 }
-section .container .article-block .article img{
-    float: left;
+.section .container .article-block .article img{
+    position: absolute;
     width: 98px;
 }
-section .container .article-block .article h3{
+.section .container .article-block .article h3{
     color: #6d6e71;
     font-family: "Open Sans";
     font-size: 26px;
@@ -208,8 +226,9 @@ section .container .article-block .article h3{
     margin-left: 133px;
     padding: 0;
 }
-section .container .article-block .article p{
-    width: 100%;
+.section .container .article-block .article p{
+    /*width: 100%;*/
+    text-align: justify;
     margin-left: 133px;
     font-family: "Open Sans";
     font-size: 16px;

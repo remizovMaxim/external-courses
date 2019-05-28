@@ -1,5 +1,3 @@
-//document.getElementById("").classList.add("active")
-//document.getElementById("").classList.remove("active")
 var home = document.getElementById("home"),
  what = document.getElementById("what"),
  weDo = document.getElementById("weDo"),
@@ -55,3 +53,8 @@ cont.onclick = function(){
     exce.classList.remove("active");
     cont.classList.add("active");
 };
+var burger = document.getElementById("burger");
+var menuContainer = document.getElementById("menu__container");
+burger.onclick = function(){
+    menuContainer.classList.toggle("active-menu");
+}
