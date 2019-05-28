@@ -8,28 +8,28 @@
  <form action='http://httpbin.org/get' metod='get'>
   <fieldset name='personal_data'>
    <legend> Personal data</legend>
-     <label for='surname' id="">Surname</label>
+     <label for='surname' id="s">Surname</label>
      <input id="surName" type='text' name='surname'>
-     <p><label for='first_name' id="">First name</label>
+     <p><label for='first_name' id="n">First name</label>
      <input id="firstName" type='text' name='first_name'></p> 
-     <p><label for='middle_name' id="">Middle name</label>
+     <p><label for='middle_name' id="m">Middle name</label>
      <input id="middleName" type='text' name='middle_name'></p> 
-     <p><label for='you' id="">You are</label>
+     <p><label for='you' id="y">You are</label>
      <input id="male" type='radio' name='you' value='male'>male
      <input id="female" type='radio' name='you' value='female'>female</p> 
-     <p><label for='age' id="">Age</label>
+     <p><label for='age' id="a">Age</label>
      <input id="number" type='number' min='18' max='101' step='1' name='age'></p> 
-     <p><label for='country' id="">Country of Residence</label>
+     <p><label for='country' id="c">Country of Residence</label>
      <select name='country'>
       <option value='Russia'> Russia</option>
       <option value='Great Britain'>Great Britain</option>
      </select></p> 
-     <p><label for='city' id="">City</label>
+     <p><label for='city' id="ci">City</label>
      <input id="city" type='checkbox' name='city' value='Ryazan'>Ryazan
      <input id="town" type='checkbox' name='city' value='Moscow'>Moscow</p>
-     <p><label for='photo' id="">Photography</label>
+     <p><label for='photo' id="ph">Photography</label>
      <input id="file" type='file' name='photo'></p><hr>
-     <p><label for='title' id="">Title</label> 
+     <p><label for='title' id="ti">Title</label> 
      <select name='title' multiple>
       <optgroup label='Techologies'>
        <option>Web Master</option>
@@ -42,17 +42,17 @@
        <option>Budgeting and planning</option>
       </optgroup>
      </select></p>
-     <p><label for='salary' id="">Salary</label>
+     <p><label for='salary' id="sa">Salary</label>
      <input id="salary" type='range' name='salary'></p>
      <textarea name='comment' placeholder='Tell us about yourself...' cols='50' rows='10'></textarea>
   </fieldset>
   <fieldset id='contact_information'>
    <legend> Contact information</legend>
-   <p><label for='site' id="">Site</label>
+   <p><label for='site' id="sit">Site</label>
    <input id="url" type='url' name='site'></p>
-   <p><label for='email' id="">Email</label>
+   <p><label for='email' id="em">Email</label>
    <input id="email" type='email' name='email'></p>
-   <p><label for='phone' id="">Phone</label>
+   <p><label for='phone' id="pho">Phone</label>
    <input id="phone" type='phone' name='phone'></p>
   </fieldset>
 
