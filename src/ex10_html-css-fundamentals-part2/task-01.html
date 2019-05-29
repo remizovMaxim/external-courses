@@ -5,22 +5,22 @@
  <title> my practice </title>
  </head>
  <body>
- <form action='http://httpbin.org/get' metod='get'>
+ <form action='http://httpbin.org/get' method='get'>
   <fieldset name='personal_data'>
    <legend> Personal data</legend>
      <label for='surname' id="s">Surname</label>
-     <input id="surName" type='text' name='surname'>
+     <input id="surname" type='text' name='surname'>
      <p><label for='first_name' id="n">First name</label>
-     <input id="firstName" type='text' name='first_name'></p> 
+     <input id="first_name" type='text' name='first_name'></p>
      <p><label for='middle_name' id="m">Middle name</label>
-     <input id="middleName" type='text' name='middle_name'></p> 
+     <input id="middle_name" type='text' name='middle_name'></p>
      <p><label for='you' id="y">You are</label>
-     <input id="male" type='radio' name='you' value='male'>male
+     <input id="you" type='radio' name='you' value='male'>male
      <input id="female" type='radio' name='you' value='female'>female</p> 
      <p><label for='age' id="a">Age</label>
-     <input id="number" type='number' min='18' max='101' step='1' name='age'></p> 
+     <input id="age" type='number' min='18' max='101' step='1' name='age'></p>
      <p><label for='country' id="c">Country of Residence</label>
-     <select name='country'>
+     <select id="country" name='country'>
       <option value='Russia'> Russia</option>
       <option value='Great Britain'>Great Britain</option>
      </select></p> 
@@ -28,9 +28,9 @@
      <input id="city" type='checkbox' name='city' value='Ryazan'>Ryazan
      <input id="town" type='checkbox' name='city' value='Moscow'>Moscow</p>
      <p><label for='photo' id="ph">Photography</label>
-     <input id="file" type='file' name='photo'></p><hr>
+     <input id="photo" type='file' name='photo'></p><hr>
      <p><label for='title' id="ti">Title</label> 
-     <select name='title' multiple>
+     <select id="title" name='title' multiple>
       <optgroup label='Techologies'>
        <option>Web Master</option>
        <option>Database Administrator</option>
@@ -49,14 +49,14 @@
   <fieldset id='contact_information'>
    <legend> Contact information</legend>
    <p><label for='site' id="sit">Site</label>
-   <input id="url" type='url' name='site'></p>
+   <input id="site" type='url' name='site'></p>
    <p><label for='email' id="em">Email</label>
    <input id="email" type='email' name='email'></p>
    <p><label for='phone' id="pho">Phone</label>
-   <input id="phone" type='phone' name='phone'></p>
+   <input id="phone" type="tel" name='phone'></p>
   </fieldset>
 
-  <label for='password' id="">Password</label>
+  <label for='password' id="pass">Password</label>
   <input type='password' id='password' required style='margin-top:10px'>
   <div style='margin-top:10px'>
    <input id="submit" type='submit'>
