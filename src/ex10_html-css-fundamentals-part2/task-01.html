@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+ <head> 
+ <meta charset="utf-8">
+ <title> my practice </title>
+ </head>
+ <body>
+ <form action='http://httpbin.org/get' method='get'>
+  <fieldset name='personal_data'>
+   <legend> Personal data</legend>
+     <label for='surname' id="s">Surname</label>
+     <input id="surname" type='text' name='surname'>
+     <p><label for='first_name' id="n">First name</label>
+     <input id="first_name" type='text' name='first_name'></p>
+     <p><label for='middle_name' id="m">Middle name</label>
+     <input id="middle_name" type='text' name='middle_name'></p>
+     <p><label for='you' id="y">You are</label>
+     <input id="you" type='radio' name='you' value='male'>male
+     <input id="female" type='radio' name='you' value='female'>female</p> 
+     <p><label for='age' id="a">Age</label>
+     <input id="age" type='number' min='18' max='101' step='1' name='age'></p>
+     <p><label for='country' id="c">Country of Residence</label>
+     <select id="country" name='country'>
+      <option value='Russia'> Russia</option>
+      <option value='Great Britain'>Great Britain</option>
+     </select></p> 
+     <p><label for='city' id="ci">City</label>
+     <input id="city" type='checkbox' name='city' value='Ryazan'>Ryazan
+     <input id="town" type='checkbox' name='city' value='Moscow'>Moscow</p>
+     <p><label for='photo' id="ph">Photography</label>
+     <input id="photo" type='file' name='photo'></p><hr>
+     <p><label for='title' id="ti">Title</label> 
+     <select id="title" name='title' multiple>
+      <optgroup label='Techologies'>
+       <option>Web Master</option>
+       <option>Database Administrator</option>
+       <option>Computer-aided design</option>
+      </optgroup>
+      <optgroup label='Finance'>
+       <option> Economic Planning</option>
+       <option>Management accounting</option>
+       <option>Budgeting and planning</option>
+      </optgroup>
+     </select></p>
+     <p><label for='salary' id="sa">Salary</label>
+     <input id="salary" type='range' name='salary'></p>
+     <textarea name='comment' placeholder='Tell us about yourself...' cols='50' rows='10'></textarea>
+  </fieldset>
+  <fieldset id='contact_information'>
+   <legend> Contact information</legend>
+   <p><label for='site' id="sit">Site</label>
+   <input id="site" type='url' name='site'></p>
+   <p><label for='email' id="em">Email</label>
+   <input id="email" type='email' name='email'></p>
+   <p><label for='phone' id="pho">Phone</label>
+   <input id="phone" type="tel" name='phone'></p>
+  </fieldset>
+
+  <label for='password' id="pass">Password</label>
+  <input type='password' id='password' required style='margin-top:10px'>
+  <div style='margin-top:10px'>
+   <input id="submit" type='submit'>
+   <input id="reset" type='reset'>
+  </div>
+ </form>
+ </body>
+</html>
